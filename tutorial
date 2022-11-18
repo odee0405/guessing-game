@@ -1,0 +1,22 @@
+secret_word = "drum"
+guess = ""
+guess_count = 0
+for guess in range(3):
+    guess = input("Enter guess: ")
+    guess_count += 1
+    if guess == secret_word:
+        print("You win!")
+        break
+    else:
+        if guess_count == 3:
+            print("You're out of tries")
+        else:
+            print("Let's see how you do in the next round")
+
+
+
+
+if guess == secret_word:
+    print("Congratulations!")
+else:
+    print("Game over!")
